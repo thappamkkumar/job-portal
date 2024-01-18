@@ -1,0 +1,150 @@
+
+<?php
+session_start();
+require("../database/db_connection.php"); 
+?>
+
+<html>
+<head>
+<title>Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+	 <link href="style/hirer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+<div class="main_container">
+		
+		 
+					<div class="navigation" id="nav_id">
+						<div class="navigation_header">
+															<div class="bar_container" onclick="show_hide()" id="top-bar_container_id">
+																		<div class="bar1" id="bar1_1"></div>
+																		<div class="bar1" id="bar1_2"></div>
+																		<div class="bar1" id="bar1_3"></div>
+																		
+															</div>
+											<div class="logo_container" id="logo_container_id">
+											<img src="../image/logo1.png" class="logo">
+											<h1 class="top_header_heading">Job Portal</h1>
+											</div>
+						</div>	
+						<div class="navigation_menu" id="navigation_menu_id">
+						<?php include'header/navigation.php'; ?>
+						</div>
+					</div>
+					
+					
+					<div class="container">
+							<div class="top_header">
+								<?php
+												$value_1=$_SESSION["username"];
+												
+												$result_1 = mysqli_query($con,"Select * from employers WHERE Email='$value_1' ");  
+												$row_1 = mysqli_fetch_array($result_1,MYSQLI_ASSOC);			
+									?>
+									<?php 
+										if(empty($row_1['Logo'])) 
+										{
+											
+									?>
+										<img src="logo/profile_icon.png"  class="top_header_image">
+									<?php 
+										}
+										else
+										{
+											
+									?>
+										<img src="logo/<?php echo$row_1['Logo'];?>"  class="top_header_image">
+									<?php 
+										}
+									?>
+									 
+									<h2 class="top_name"><?php echo$row_1['Name'];?></h2>
+							</div>	
+					
+							<div class="sub_container">
+									 	
+													<div class="profile" id="logout_id">
+															 <div class="sub_container_heading">
+																	<h1 >LogOut</h1>
+																	</div>
+																	
+																	 
+															 <form action="logout.php" method="post" enctype="multipart/form-data">
+																	
+																		<table>
+																				 <tr><td><lable>Click yes to Logout your account.</lable></td></tr>
+																				<tr  class="button"><td colspan="2">			
+																				<input type="submit" class="profile_update_btn"   value="Yes" name="yes">
+																				<button type="button" onclick="history.back();" id="logout" class="profile_update_btn">No</button>
+																					</td></tr>
+																		</table>
+																	</form>
+																	 
+													</div>
+
+													
+													
+
+									
+											
+							</div>
+					
+					</div>
+		 
+
+
+</div>
+
+
+<?php 
+			
+		
+			
+if(isset($_POST['yes']))
+	{ 				
+				session_destroy();
+				unset($_SESSION["username"]);
+				unset($_SESSION["password"]);
+				 
+				echo "<script>  window.location.href='../login.php'; </script>"; 
+	}
+	
+			?>
+		
+<script>
+
+
+		 
+	
+		 function show_hide()
+		 {
+			 w=document.getElementById("nav_id").style.width;
+			 
+			 if(w=="250px")
+			 {
+				document.getElementById("logo_container_id").style.display="none";
+				 document.getElementById("navigation_menu_id").style.display="none";
+				 document.getElementById("nav_id").style.height="25px";
+				 document.getElementById("nav_id").style.width="65px"; 
+			 }
+			 else
+			 {
+				   document.getElementById("logo_container_id").style.display="block";
+				 document.getElementById("navigation_menu_id").style.display="block";
+				 document.getElementById("nav_id").style.height="100%";
+				 document.getElementById("nav_id").style.width="250px";
+			 }
+		 }
+		 
+		 
+		 
+
+	if(window.history.replaceState)
+	{
+			window.history.replaceState(null,1,null,window.location.href);
+	}
+		</script>
+</body>
+</html>

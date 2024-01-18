@@ -1,0 +1,330 @@
+
+.search_container
+{
+	width:90%;
+	height:auto;
+	border:2px solid rgba(34,98,198,1);
+	margin:auto;
+	margin-top:10px;
+	padding-top:20px;
+	padding-bottom:10px;
+	background:rgba(34,98,198,1);
+	/text-align:center;
+	/overflow:hidden;
+
+}
+.search_input
+{
+	width:70%;
+	height:40px;
+	margin-left:30px;
+	border:none;
+	outline:none;
+	padding-left:10px;
+	color:rgba(28,43,86,1);
+	margin-bottom:10px;
+}
+	.search_input:focus
+	{
+		background:rgba(255,255,255,0.9);
+		color:rgba(28,43,86,1);
+		border:none;
+	}
+.search_btn
+{
+	background:rgba(255,255,255,1);
+	width:100px;
+		height:40px;
+		font-weight:bold;
+		font-size:15px;
+		border:none;
+		color:rgba(25,25,255,1);
+		/border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		margin-left:20px;
+		margin-bottom:10px;
+}
+.search_btn:hover
+{
+	background:rgba(255,255,255,0.5);
+} 
+.candidate_container
+{
+	width:90%;
+	height:auto;
+	/overflow:hidden;
+	margin:auto;
+	border-top:1px solid rgba(200,200,200,0.3);
+	margin-top:20px;
+	padding-bottom:50px;
+}
+.candidate
+{
+	width:99%;
+	height:auto;
+	border:2px solid rgba(0,0,0,0.2);
+ margin-top:20px;
+ display:flex;
+ padding-bottom:20px;
+ background:#fff;
+}
+.candidate_image_container
+{
+	width:15%;
+	height:200px;
+	
+	position:relative;
+}
+.candidate_detail_container
+{
+	width:85%;
+	height:auto;
+	line-height:28px;
+	padding-top:20px;
+	
+}
+
+.candidate_profile_image
+{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		border:none;
+		outline:none;
+		position:absolute;
+		right:20px;
+		top:20px;
+		
+}
+.name
+{
+	color:rgba(0,0,0,1);
+	display:block;
+	font-size:25px;
+	font-weight:bold;
+}
+.applied_date
+{
+	display:block;
+	color:rgba(34,98,198,1);
+	font-size:15px;font-weight:bold;
+}
+.applied_for
+{
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+	color:rgba(0,0,0,1);
+}
+.phone_no
+{
+	font-size:15px;
+	color:rgba(0,0,0,0.7);
+}
+
+.email
+{
+	font-size:15px;
+	color:rgba(0,0,0,0.7);
+	margin-left:20px;
+}
+.response
+{
+	display:block;
+	font-size:15px;
+	color:rgba(34,98,198,1);
+}
+.resume
+{
+	text-decoration:none;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	font-weight:bold;
+	font-size:15px;
+	background-color:rgba(34,98,228,1); 	
+	border:2px solid rgba(28,43,86,0.0);
+	color:rgba(255,255,255,1);
+	border-radius:10px;
+	cursor:pointer;
+	box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+	margin-top:10px;
+}
+.view_detail
+{
+	background:rgba(24,255,25,1);
+	width:100px;
+		height:40px;
+		font-weight:bold;
+		font-size:15px;
+		border:2px solid rgba(28,43,86,0.0);
+		color:rgba(255,255,255,1);
+		border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		margin-left:20px;
+		margin-top:10px;
+}
+.application_detail
+{
+	width:150px;
+		height:40px;
+		font-weight:bold;
+		font-size:15px;
+		background-color:rgba(34,98,228,1); 	
+		border:2px solid rgba(28,43,86,0.0);
+		color:rgba(255,255,255,1);
+		border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		margin-left:20px;
+		margin-top:10px;
+}
+
+
+.page_number_container
+{	
+		width:100%;
+		height:50px;
+		margin-top:40px;
+		text-align:center;
+		
+}
+.page_number
+{
+	 padding-left:5px;
+	 padding-right:5px;
+	border:2px solid rgba(200,200,200,0.5);
+	text-decoration:none;
+	background:#fff;
+	color:#000;
+	margin-left:10px;
+}
+.page_number:hover
+{	
+	background:rgba(34,98,198,0.5);
+}
+
+
+
+@media only screen and (max-width: 1300px)
+{
+		  
+
+.candidate_profile_image
+{
+		width:50%;
+		height:50%;
+}
+		  
+}
+
+
+@media only screen and (max-width: 600px)
+{
+	
+.candidate_image_container
+{
+	width:25%;
+	 
+}
+.candidate_detail_container
+{
+	width:75%;
+	 
+	
+}
+.candidate_profile_image
+{
+	width:50px;
+	height:50px;
+}
+
+.name
+{
+	
+	font-size:20px;
+	
+}
+.applied_date
+{
+	
+	font-size:12px;
+}
+.applied_for
+{
+	
+	font-size:12px;
+	
+}
+.phone_no
+{
+	font-size:12px;
+	 
+}
+
+.email
+{
+	font-size:12px;
+	 
+}
+.response
+{
+	 
+	font-size:12px;
+	 
+}
+
+
+.search_input
+{
+	width:60%;
+	height:40px;
+	margin-left:10px;
+	
+}
+	
+.search_btn
+{
+	width:30%;
+	height:40px;
+	margin-left:5px;
+}
+.sub_container_heading h1
+	{
+		font-size:25px;
+	}
+	
+	
+	
+.resume
+{
+	
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	font-size:13px;
+	
+}
+.view_detail
+{
+	background:rgba(24,255,25,1);
+	width:90px;
+		height:40px;
+		font-size:13px;
+		margin-left:10px;
+		
+}
+.application_detail
+{
+	width:140px;
+		height:40px;
+		font-size:13px;
+		margin-left:10px;
+		
+}
+
+}

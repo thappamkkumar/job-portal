@@ -1,0 +1,258 @@
+.profile
+{
+	width:600px;
+	height:auto;
+	padding-bottom:20px;
+	border:2px solid rgba(200,200,200,1);
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.profile_image_container
+{
+	width:100%;height:250px;
+	display:flex; justify-content:center;align-items:flex-end;
+	position:relative;
+	z-index:1;
+	padding-bottom:0px;
+	border-bottom:1px solid rgba(200,200,200,0.7);
+	background:rgba(34,98,198,1);
+}
+.profile_image_container::before
+{
+	content:"";
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:60%;
+	/background:rgba(34,98,198,0.5);
+	z-index:-1;
+}
+ 
+
+.profile_image
+{
+	width:150px;
+		height:150px;
+		position:relative;
+		border-radius:100px;
+		 margin:auto;
+		 margin-top:50px;
+		 background:#fff;
+	border:1px solid rgba(200,200,200,0.5);
+	box-shadow:0px 0px 4px 2px rgba(0,0,0,0.5);
+}
+.profile_image::after
+{
+	content:"";
+	width:40px;
+	height:40px;
+	background:rgba(243,126,12,1);
+	position:absolute;
+	bottom:-10px;
+	right:20px;
+	cursor:pointer;
+	border-radius:50%;
+	box-shadow:0px 0px 2px 4px rgba(0,0,0,0.3);
+	background-image:url("../../image/plus.png");
+	background-repeat:no-repeat;
+	background-size:30px;
+	background-position:center;
+}
+.profile_image:hover::after
+{
+	background-color:rgba(243,126,12,1);
+	width:50px;
+	height:50px;
+}
+.image
+{
+	width:100%;
+	height:100%;
+	border-radius:100px;
+}
+.profile_detail
+{
+	width:100%;
+	height:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	
+}
+.profile_detail h2 
+{
+	margin-left:20px;
+	
+}
+
+.profile_detail p 
+{
+	margin-left:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+	display:flex;
+	align-items:center;
+}
+
+.detail_job_location
+{
+	display:inline-block;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+	margin-left:0px;
+}
+.detail_job_location  i
+{
+	margin-right:10px;
+	box-sizing:border-box;
+	position:relative;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	border:5px solid rgba(255,0,0,1);
+	border-radius:100%;
+	
+}
+.detail_job_location  i::after{
+	
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin:1px 0 0 -6px;
+	display:block;
+	content:' ';
+	border:6px solid transparent;
+	border-top:10px solid rgba(255,0,0,1);
+	border-bottom:none;
+}
+
+
+
+table
+{
+	width:80%;
+	height:auto;
+	margin:auto;
+	margin-top:15px;
+}
+table tr
+{
+	height:80px;
+	/background:rgba(255,0,0,0.5);
+}
+lable
+{
+		color:rgba(28,43,86,1);
+		font-size:20px;
+		
+}
+.input1{
+		width:80%;
+		height:35px;
+		background-color:rgba(255,255,255,1);
+		border:1px solid rgba(28,43,86,1);
+		margin-left:10px;
+		padding-left:10px;
+		outline:none;
+		font-size:15px;
+		border-left:3px solid rgba(28,43,86,1);
+		border-right:3px solid rgba(28,43,86,1);
+		margin-top:10px;
+		color:rgba(28,43,86,1);
+}
+
+::-webkit-input-placeholder{
+		color:rgba(28,43,86,0.5);
+}
+::-ms-input-placeholder{
+		color:rgba(28,43,86,0.5);
+}
+::-moz-input-placeholder{
+		color:rgba(28,43,86,0.7);
+}
+.input1:focus{
+					/border-left:5px solid rgba(34,98,228,1); 
+					/border-right:5px solid rgba(34,98,228,1); 
+					background-color:rgba(34,98,228,0.3); 
+					/color:rgba(255,255,255,1);
+					font-size:16px;
+}
+
+
+.profile_update_btn
+{
+	width:auto;
+	height:auto;
+	background:red;
+	margin-left:30px;
+	margin-top:30px;
+	border:none;
+	font-size:20;
+	font-weight:bold;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	background-color:rgba(34,98,228,1); 	
+		color:rgba(255,255,255,1);
+		border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		
+}
+.profile_update_btn:hover
+{
+				
+					
+					background-color:rgba(243,126,12,1);
+					color:rgba(255,255,255,1);
+}
+#update_profile
+{
+	display:none;
+}
+
+#update_image
+{
+	display:none;
+}
+.profile_btn
+{
+	width:100%;
+	height:40px;
+	background:rgba(34,98,198,0.6);
+	border:2px solid rgba(200,200,200,1);
+	font-size:20px;
+}
+.profile_btn:hover
+{
+				
+					
+					background-color:rgba(243,126,12,1);
+					color:rgba(255,255,255,1);
+}
+
+.btn_img
+{
+		width:20px;
+	height:20px;
+	margin-top:5px;
+}
+
+
+
+@media only screen and (max-width: 700px)
+{
+	.profile
+{
+	width:90%;
+	 
+}
+.sub_container_heading h1
+{
+	font-size:20px;
+}
+}

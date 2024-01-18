@@ -1,0 +1,274 @@
+
+.profile
+{
+	width:90%;height:auto;
+	background:rgba(255,255,255,1);
+ 	border-top:2px solid rgba(200,200,200,0.5);
+	margin:auto;margin-top:20px; padding-top:20px;
+}
+
+.profile_detail_sub_container1
+{
+	display:flex; width:100%; height:auto; line-height:35px;  padding-top:30px;margin:auto; margin-top:10px;	 
+}
+
+.company_logo
+{
+	width:100px; height:100px; display:inline-block; margin:auto
+}
+.company_name
+{
+	font-size:25px;
+	font-weight:bold;
+	color:rgba(24,38,120,1);
+	display:block;
+	margin-left:10px;
+	margin-top:10px;
+}
+.detail_job_location i
+{
+	margin-right:10px;
+	box-sizing:border-box;
+	position:relative;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	border:5px solid rgba(255,0,0,1);
+	border-radius:100%;
+	
+}
+.detail_job_location i::after{
+	
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin:1px 0 0 -6px;
+	display:block;
+	content:' ';
+	border:6px solid transparent;
+	border-top:10px solid rgba(255,0,0,1);
+	border-bottom:none;
+}
+
+.detail_button_container
+{
+	float:right;
+	padding-left:20px; padding-right:20px;
+	margin-right:20px;
+	 
+}
+.detail_edit
+{
+	width:30px;
+	height:25px;
+	border:0px solid rgba(28,43,86,1);
+	background:rgba(34,98,198,1);
+	padding-left:10px; padding-right:10px;padding-top:5px; padding-bottom:5px;
+		margin-right:10px;
+}
+.detail_edit:hover
+{
+	background-color:rgba(243,126,12,0.9);
+}
+.profile_detail_sub_container2
+{
+	
+	 width:90%; height:auto;margin:auto;padding-top:20px;line-height:35px;padding-bottom:30px;
+	
+}
+
+.profile_detail_sub_container2 h2
+{
+	color:rgba(28,43,86,1);
+	margin-top:15px;
+}
+
+.profile_detail_sub_container2 p
+{
+	color:rgba(28,43,86,0.8);
+	font-size:20px;
+}
+
+.profile_update
+{
+	width:90%;height:auto;
+	background:rgba(255,255,255,1);
+ 	border-top:2px solid rgba(200,200,200,0.5);
+	margin:auto;margin-top:20px; padding-top:20px;
+	
+	 
+}
+form
+{
+	width:100%;
+	height:100%;
+	
+}
+table{
+	width:100%;
+	height:auto;
+	padding-bottom:500px;
+}
+table tr
+{
+	height:90px;
+
+}
+lable
+{
+		color:rgba(28,43,86,1);
+		font-size:20px;
+		 
+		
+}
+.input1{
+		width:50%;
+		height:35px;
+		background-color:rgba(255,255,255,1);
+		border:1px solid rgba(28,43,86,1);
+		margin-left:10px;
+		text-align:center;
+		outline:none;
+		font-size:15px;
+		border-left:3px solid rgba(28,43,86,1);
+		border-right:3px solid rgba(28,43,86,1);
+		margin-top:10px;
+		color:rgba(28,43,86,1);
+}
+
+#logo{
+		 
+		font-size:25px;
+		 
+}
+
+::-webkit-input-placeholder{
+		color:rgba(28,43,86,0.5);
+}
+::-ms-input-placeholder{
+		color:rgba(28,43,86,0.5);
+}
+::-moz-input-placeholder{
+		color:rgba(28,43,86,0.7);
+}
+.input1:focus{
+					/border-left:5px solid rgba(34,98,228,1); 
+					/border-right:5px solid rgba(34,98,228,1); 
+					background-color:rgba(34,98,228,0.3); 
+					/color:rgba(255,255,255,1);
+					font-size:16px;
+}
+
+.update_profile
+{
+		width:25%;
+		height:40px;
+		font-weight:bold;
+		font-size:20px;
+		background-color:rgba(34,98,228,1); 	
+		border:2px solid rgba(28,43,86,0.0);
+		color:rgba(255,255,255,1);
+		border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		
+}
+.update_profile:hover
+{
+				
+					
+					background-color:rgba(243,126,12,1);
+					color:rgba(255,255,255,1);
+}
+
+.job_edit
+{
+	width:90%; height:50px;margin:auto;		border:2px solid rgba(200,200,200,0.5); margin-bottom:20px;
+}
+.job_edit a
+{
+	display:inline-block;
+	text-decoration:none;
+	color:rgba(0,0,100,1);
+	font-size:20px;
+	 
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:20px;
+}
+.job_edit a:hover 
+{
+	color:rgba(255,0,0,1);
+}
+.job_edit button
+{
+	 width:auto;
+	 height:50px;
+	 background:#fff;
+	 color:rgba(0,0,100,1);
+	 padding-left:20px;
+	  border:none;
+	  outline:none;
+	cursor:pointer;
+	font-size:20px;
+	text-align:left;
+}
+.job_edit button:hover 
+{
+	color:rgba(255,0,0,1);
+}
+ .change_password, .logout
+ {
+	 width:90%;
+	 height:auto;
+	 margin:auto;
+	  
+ }
+ .logout div
+{
+	width:350px;
+	height:400px;
+	
+	margin:auto;
+	
+}
+.logout div h1
+{
+	color:rgba(28,98,198,1);
+	margin-bottom:10px;
+}
+.logout div p
+{
+	font-size:20px;
+	color:rgba(0,0,0,0.7);
+	margin-bottom:10px;
+}
+.profile_update_btn
+{
+	width:auto;
+	height:auto;
+	background:red;
+	margin-left:30px;
+	margin-top:80px;
+	border:none;
+	font-size:20;
+	font-weight:bold;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	background-color:rgba(34,98,228,1); 	
+		color:rgba(255,255,255,1);
+		border-radius:10px;
+		cursor:pointer;
+		box-shadow:0px 15px 15px -15px rgba(0,0,0,1);
+		
+}
+.profile_update_btn:hover
+{
+				
+					
+					background-color:rgba(243,126,12,1);
+					color:rgba(255,255,255,1);
+}
+ 
