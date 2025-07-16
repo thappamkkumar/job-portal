@@ -81,10 +81,13 @@ require("../database/db_connection.php");
 											<input type="text" class="input1" value="<?php echo$row['Page1_Title'];?>" name="title">
 											<lable>Email</lable>
 											<input type="text" class="input1" value="<?php echo$row['Email'];?>" name="email">
+											
 											<lable>Mobile Number</lable>
 											<input type="text"  class="input1"  value="<?php echo$row['Mobile_Number'];?>" name="mobile">
-											<lable>Page Description</lable>
-											<textarea   rows="5" class="input1" placeholder="address" name="description"><?php echo$row['Page1_Description'];?></textarea>
+											
+											<lable>Address</lable>
+											<input type="text"  class="input1" placeholder="address"  value="<?php echo$row['Page1_Description'];?>" name="description">
+											 
 											<input type="submit" class="submit" name="update" value="Update">
 											</form>
 									</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2024 at 01:39 PM
+-- Generation Time: Jul 16, 2025 at 09:23 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -45,7 +45,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`S.no`, `Page1_Title`, `Email`, `Mobile_Number`, `Page1_Description`, `Page2_Title`, `Page2_Description`, `Name`, `profile_image`, `Password`) VALUES
-(1, 'Contact', 'admin@email.com', '95794745944', 'this is contact page', 'About', 'gfdsgds gdsogj dsadsipjgn dsofgjdsngd  jnodf  sfgjedsgsd gs gsdgds dsfh dfjhdfgh dfh rfsdhg r gsdfr gsdfghdshgdsfrh dsfrhds  frhfdhgf rdshgfd shsd frhdfghfdshd edsgds gsdfg dsgdsf gsdfg sdfg dsfhbr dbn dfhb dfrdfgth ', 'admin', 'admin_profile_image.png', 'admin123');
+(1, 'Contact', 'admin@email.com', '95794745944', '58299 Grady Unions, Schambergerfort, MA 47677-321556', 'About', 'At JOB PORTAL, we believe job searching should be smarter, faster, and more human. That`s why we`ve built a platform that goes beyond listings - connecting people with opportunities that truly match their skills, goals, and values.\r\n\r\nWhether you`re exploring your next career move or hiring top talent, our mission is simple: to make the job search process seamless and empowering for everyone involved. With advanced matching algorithms, real-time alerts, and expert career resources, we`re here to help job seekers take the next step — and help companies discover candidates who are more than just a resume.\r\n\r\nJoin thousands of professionals and employers who trust JOB PORTAL to unlock their potential, one opportunity at a time.\r\n\r\n', 'admin', 'admin_profile_image.png', 'admin123');
 
 -- --------------------------------------------------------
 
@@ -77,6 +77,7 @@ CREATE TABLE `employers` (
 --
 
 CREATE TABLE `jobs` (
+  `S_No` int(11) NOT NULL,
   `Category` varchar(500) NOT NULL,
   `Job_Title` varchar(500) NOT NULL,
   `Job_Type` varchar(500) NOT NULL,
@@ -158,7 +159,7 @@ CREATE TABLE `login_info` (
 --
 
 INSERT INTO `login_info` (`S.NO`, `Name`, `Email`, `Password`, `Company_name`, `Tagline`, `Description`, `Website`, `User_type`) VALUES
-(1, 'admin', 'admin@email.com', 'admin123', '', '', '', '', 'admin');
+(3, 'admin', 'admin@email.com', 'admin123', '', '', '', '', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -175,6 +176,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `employers`
   ADD PRIMARY KEY (`S.no`);
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`S_No`);
 
 --
 -- Indexes for table `jobseekers`
@@ -213,6 +220,12 @@ ALTER TABLE `employers`
   MODIFY `S.no` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `S_No` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `jobseekers`
 --
 ALTER TABLE `jobseekers`
@@ -228,7 +241,7 @@ ALTER TABLE `jobs_applied`
 -- AUTO_INCREMENT for table `login_info`
 --
 ALTER TABLE `login_info`
-  MODIFY `S.NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `S.NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

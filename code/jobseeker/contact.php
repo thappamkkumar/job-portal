@@ -66,14 +66,14 @@ require("../database/db_connection.php");
 													$result_1 = mysqli_query($con,"Select * from admin  ");  
 													$row_1 = mysqli_fetch_array($result_1,MYSQLI_ASSOC);		
 											?>
-							<div class="sub_container">
+							<div class="sub_container" style="padding-bottom:20px;">
 							
 									<div class="contact">
 											
 											<h1 style="text-align:center;"><?php echo$row_1['Page1_Title'];?></h1>
-											<div class="content"><span class="icons"><img src="../image/email.png" class="icon_img"></span><span class="em"><?php echo$row_1['Email'];?></span></div>
-											<div class="content"><span class="icons"><img src="../image/phone1.png" class="icon_img"></span><span class="em"><?php echo$row_1['Mobile_Number'];?></span></div>
-											<div class="content"><span class="icons"><img src="../image/location.png" class="icon_img"></span><span class="em"><?php echo$row_1['Page1_Description'];?></span></div>
+											<div class="content"><span class="icons"><img src="../image/email.png" class="icon_img"></span><span style="padding-left:15px; font-size:20px;"><?php echo$row_1['Email'];?></span></div>
+											<div class="content"><span class="icons"><img src="../image/phone1.png" class="icon_img"></span><span style="padding-left:15px; font-size:20px;"><?php echo$row_1['Mobile_Number'];?></span></div>
+											<div class="content"><span class="icons"><img src="../image/location.png" class="icon_img"></span><span style="padding-left:15px; font-size:20px;"><?php echo$row_1['Page1_Description'];?></span></div>
 											
 									</div>
 							</div>

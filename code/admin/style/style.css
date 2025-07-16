@@ -374,3 +374,21 @@ body
 }
  
 }		  
+
+
+.view_detail
+{
+	background:rgba(34,98,198,1); 
+	color:rgba(255,255,255,1);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border:none;
+	font-size:16px;
+}
+.view_detail:hover
+{
+	background:rgba(34,98,198,0.8); 
+	 
+}

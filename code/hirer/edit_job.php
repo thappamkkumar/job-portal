@@ -39,8 +39,11 @@ require("../database/db_connection.php");
 							<div class="top_header">
 									 
 									<?php
-												$result_1 = mysqli_query($con,"Select * from employers WHERE Email='employer@gmail.com' ");  
-												$row_1 = mysqli_fetch_array($result_1,MYSQLI_ASSOC);			
+											
+												$value_1=$_SESSION["username"];
+												
+												$result_1 = mysqli_query($con,"Select * from employers WHERE Email='$value_1' ");  
+												$row_1 = mysqli_fetch_array($result_1,MYSQLI_ASSOC);	
 									?>
 									<?php 
 										if(empty($row_1['Logo'])) 

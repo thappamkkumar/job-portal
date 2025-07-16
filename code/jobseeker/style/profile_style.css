@@ -28,7 +28,7 @@
 	top:-30px;
 	bottom:-100px;
 	width:250px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;
@@ -93,7 +93,7 @@
 	top:-130px;
 	bottom:-100px;
 	width:200px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;
@@ -147,8 +147,7 @@
 	overflow:hidden;
 }
 .profile_2 h1{
-	/width:100%;
-	/height:50px;
+	 
 	margin-top:20px;
 	margin-bottom:20px;
 	color:rgba(28,34,120,1);
@@ -229,7 +228,7 @@ table
 table tr
 {
 	height:80px;
-	/background:rgba(255,0,0,0.5);
+	/*background:rgba(255,0,0,0.5);*/
 }
 lable
 {
@@ -331,7 +330,7 @@ lable
 	top:-30px;
 	bottom:-100px;
 	width:200px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;
@@ -355,7 +354,7 @@ lable
 	top:-130px;
 	bottom:-100px;
 	width:150px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;
@@ -447,7 +446,7 @@ lable
 	top:-30px;
 	bottom:-100px;
 	width:150px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;
@@ -471,7 +470,7 @@ lable
 	top:-130px;
 	bottom:-100px;
 	width:150px;
-	/height:100%;
+	/*height:100%;*/
 	 transform:rotate(-30deg);
 	background:rgba(34,98,198,1);
 	z-index:-1;

@@ -100,6 +100,7 @@ require("../database/db_connection.php");
 	{ 
 		$title=$_POST['title'];
 		$description=$_POST['description'];
+		echo "<script> alert('". $description . "') ; </script>"; 
 	 $sql="UPDATE `admin` SET `Page2_Title`='$title',`Page2_Description`='$description' WHERE `admin`.`Email` = '$value_1'";
 					
 					if(mysqli_query($con, $sql))

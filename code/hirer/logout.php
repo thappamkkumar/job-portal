@@ -68,18 +68,17 @@ require("../database/db_connection.php");
 													<div class="profile" id="logout_id">
 															 <div class="sub_container_heading">
 																	<h1 >LogOut</h1>
-																	</div>
-																	
+																	<p style="padding-top:10px; ">Click yes to Logout your account.</p>	
+																</div>
+														
 																	 
 															 <form action="logout.php" method="post" enctype="multipart/form-data">
 																	
-																		<table>
-																				 <tr><td><lable>Click yes to Logout your account.</lable></td></tr>
-																				<tr  class="button"><td colspan="2">			
-																				<input type="submit" class="profile_update_btn"   value="Yes" name="yes">
-																				<button type="button" onclick="history.back();" id="logout" class="profile_update_btn">No</button>
-																					</td></tr>
-																		</table>
+																		<div style="padding-top:10px;  "> 
+																				<input type="submit" class="profile_update_btn"   value="Yes" name="yes" style="margin-left:20px;">
+																				<button type="button" onclick="history.back();" id="logout" class="profile_update_btn" style="margin-left:0px;">No</button>
+																					  
+																		</div>
 																	</form>
 																	 
 													</div>
